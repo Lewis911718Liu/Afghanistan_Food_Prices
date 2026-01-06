@@ -61,14 +61,14 @@ Open scripts/Time_Series_Analysis_R_file.R
 
 Run to generate ARIMA forecasts and detect price anomalies.
 
-📊 Data Source & Methodology
+## 📊 Data Source & Methodology
 Data: The primary dataset contains daily/monthly food price indices and inflation rates for Afghanistan.
 
 Preprocessing: Missing values in inflation data were handled using linear interpolation (for Time Series) or removal (for Regression), documented within the scripts.
 
 Reproducibility: A fixed random seed (set.seed(123)) is used in machine learning scripts to ensure that training/testing splits and model results are identical on every run.
 
-👤 Author
+## 👤 Author
 Project Team: [LIU YIQIAN / WQD7001 GA12]
 
 Date: 6th January 2026
