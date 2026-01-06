@@ -59,6 +59,8 @@ X_test <- test %>% select(Close_lag1, Close_lag3, Close_lag6, Close_lag12,
                           Inflation, sin12, cos12) %>% as.matrix()
 y_test <- test$Close
 
+set.seed(123)
+
 dtrain <- xgb.DMatrix(X_train, label = y_train)
 dtest  <- xgb.DMatrix(X_test,  label = y_test)
 
