@@ -9,7 +9,7 @@ library(caret)
 # -------------------------------
 # 2. Load the dataset
 # -------------------------------
-data <- read.csv("AFG_Dataset.csv", header = TRUE, sep = ",")
+data <- read.csv("data/AFG_Dataset.csv", header = TRUE, sep = ",")
 
 # -------------------------------
 # 3. Clean the data
