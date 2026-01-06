@@ -27,8 +27,9 @@ The project is organized as follows to ensure reproducibility:
 │   └── Assignment_2_Linear_Regression_ML_Model.R
 ├── results/                   # Generated plots and outputs
 └── README.md                  # Project documentation
+ ```
 
-🚀 How to Reproduce the Results
+## 🚀 How to Reproduce the Results
 Step 1: Clone the Repository
 Download this repository to your local machine using git clone or by downloading the ZIP file.
 
