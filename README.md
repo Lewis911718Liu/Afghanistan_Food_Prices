@@ -29,37 +29,27 @@ The project is organized as follows to ensure reproducibility:
 └── README.md                  # Project documentation
  ```
 
-## 🚀 How to Reproduce the Results
-Step 1: Clone the Repository
-Download this repository to your local machine using git clone or by downloading the ZIP file.
+## 🚀 Quick Start Guide
 
-Step 2: Environment Setup
-To ensure you have the correct R packages installed, open RStudio and run the setup script:
+Ready to reproduce the analysis? Here is your step-by-step roadmap.
 
-Open scripts/00_Install_Packages.R.
+### 🛠 Step 1: Installation
+First, clone the repo or download the ZIP file. Then, initialize your R environment by running the installer script:
 
-Run the entire script. (This will automatically install tidyverse, xgboost, forecast, caret, and other dependencies.)
+> 📂 **Open:** `scripts/00_Install_Packages.R`
+>
+> ▶️ **Action:** Run the full script to install `tidyverse`, `xgboost`, and other dependencies.
 
-Step 3: Run the Analysis
-You can run the analysis scripts in the following order:
+### 📊 Step 2: Execution Pipeline
+Run the analysis scripts in this specific sequence:
 
-Linear Regression: * Open scripts/Assignment_2_Linear_Regression_ML_Model.R
+| Order | Analysis Type | File Path | Outcome |
+| :--- | :--- | :--- | :--- |
+| **1** | **Linear Regression** | `scripts/Assignment_2_...R` | Check statistical significance of price/inflation. |
+| **2** | **XGBoost Model** | `scripts/Temporal_Analysis.R` | Train model & view Feature Importance. |
+| **3** | **Time Series** | `scripts/Time_Series_...R` | Generate ARIMA forecasts & anomaly detection. |
 
-Run to see the statistical significance of High/Low prices on Inflation.
-
-Temporal Patterns (XGBoost):
-
-Open scripts/Temporal_Analysis.R
-
-Run to train the ML model and visualize Feature Importance.
-
-Note: Random seed is set to 123 for consistent results.
-
-Time Series Forecasting:
-
-Open scripts/Time_Series_Analysis_R_file.R
-
-Run to generate ARIMA forecasts and detect price anomalies.
+> **💡 Note:** We have set the random seed to `123` to ensure you get the exact same results as shown in the report.
 
 ## 📊 Data Source & Methodology
 Data: The primary dataset contains daily/monthly food price indices and inflation rates for Afghanistan.
